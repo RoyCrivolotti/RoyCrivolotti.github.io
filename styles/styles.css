@@ -2,6 +2,14 @@ html {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   font-size: 0.9em;
   margin-bottom: 10em;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
 }
 
 body {
@@ -58,6 +66,14 @@ body {
   }
 }
 
+#prog_lang {
+  text-align: justify;
+}
+
+#prog_lang p {
+  font-weight: 300;
+}
+
 .name {
   color: #fff;
   font-variant: small-caps;
@@ -78,8 +94,8 @@ h1 {
   margin-top: 2em;
 }
 
-#imageBlock #img:active,
-#imageBlock #img:hover {
+#imageBlock img:active,
+#imageBlock img:hover {
   transition: 0.5s;
   opacity: 0.7;
 }
@@ -92,6 +108,56 @@ h1 {
   float: left;
   width: 60%;
   margin-left: 15%;
+}
+
+#iconBlock {
+  display: flex;
+  flex-flow: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+#iconBlock div {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+  width: 25vw;
+  max-height: 200px;
+  max-width: 200px;
+  min-width: 150px;
+  min-height: 150px;
+  margin-bottom: 2em;
+}
+
+#iconBlock div img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+#iconBlock div img:active,
+#iconBlock div img:hover {
+  opacity: 0.5;
+  transform: scale(1.3);
+}
+
+.iconText {
+  position: absolute;
+  left: 5%;
+  opacity: 0;
+  cursor: default;
+}
+
+#iconBlock div:active>.iconText,
+#iconBlock div:hover>.iconText {
+  transition: 0.5s;
+  opacity: 1;
+  font-size: 1.5em;
+}
+
+#iconBlock span:active,
+#iconBlock span:hover {
+  display: none;
 }
 
 section {
@@ -142,7 +208,7 @@ dt:hover+dd+dd {
   clear: both;
 }
 
-#img {
+#imageBlock img {
   width: 100%;
 }
 
@@ -160,13 +226,7 @@ dt:hover+dd+dd {
 
 @media only screen and (max-width: 768px) {
   .iconText {
-    left: 15%;
-    max-width: none;
-    font-size: 1em;
-    text-align: center;
-    margin-top: auto;
-    position: relative;
-    margin-left: -3em;
+    display: none;
   }
 
   body {
@@ -180,6 +240,10 @@ dt:hover+dd+dd {
     margin-left: auto;
     float: none;
     position: relative;
+  }
+
+  .secondaryText {
+    display: none;
   }
 
   #topBar {
@@ -196,6 +260,11 @@ dt:hover+dd+dd {
     width: auto;
     margin: auto auto;
     top: 10vh;
+    overflow: hidden;
+  }
+
+  #content::-webkit-scrollbar {
+    display: none;
   }
 
   h2 {
@@ -212,19 +281,16 @@ dt:hover+dd+dd {
     margin-right: auto;
   }
 
-  #prog_lang {
-    position: relative;
-    display: contents;
-    width: 54vw;
-    padding: 1em;
-    text-align: center;
-  }
-
   #imageBlock {
     float: none;
     left: 50%;
     margin: auto auto 2em;
-    width: 25vh;
+    width: 50vh;
+  }
+
+  #imageBlock img {
+    width: 70%;
+    margin-left: 15%;
   }
 
   dd,
