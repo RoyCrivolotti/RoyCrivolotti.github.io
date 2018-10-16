@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Kadwa:400,700|Raleway&subset=devanagari');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+
 html {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-  font-size: 0.9em;
-  margin-bottom: 10em;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -13,35 +13,37 @@ html::-webkit-scrollbar {
 }
 
 body {
-  margin: 5em;
-  font-weight: lighter;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6em;
 }
 
-#marginFromBar {
-  top: 10em;
-  height: 5em;
+dl {
+  margin-left: 25%;
 }
 
-#content {
-  position: absolute;
-  left: 0;
-  margin-left: 2em;
-  top: 10em;
-  bottom: 0;
-  overflow-y: scroll;
-  padding-bottom: 3em;
+h2 {
+  text-align: center;
+  font-family: 'Kadwa', serif;
+  margin-bottom: 2em;
 }
 
 #topBar {
-  height: 10em;
+  z-index: 1;
+  height: 5em;
   width: 100%;
-  background-color: #000;
+  background: #000;
   top: 0;
   left: 0;
   position: fixed;
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-name: fadeInRight;
+}
+
+#title {
+  margin-left: 1em;
+  color: #fff;
+  font-weight: lighter;
 }
 
 @keyframes fadeInRight {
@@ -51,18 +53,8 @@ body {
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 0.6;
     transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes fadeInRight {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0.8;
   }
 }
 
@@ -70,65 +62,102 @@ body {
   font-weight: 300;
 }
 
-.name {
-  color: #fff;
-  font-variant: small-caps;
-  font-size: 2.2em;
-  text-align: left;
-  font-weight: normal;
-  margin-left: 2.2em;
-  left: 2em;
+.green {
+  width: 100vw;
+  min-height: 50em;
+  max-height: 1000px;
+  height: 80vh;
+  background-color: #7DCBC4;
+  display: flex;
+  padding-bottom: 2em;
+  justify-content: center;
+  align-items: center;
 }
 
-h1 {
-  margin-bottom: -10px;
+#prog_lang {
+  font-family: 'Anonymous Pro', monospace;
+  text-align: justify;
+  width: 350px;
+  padding-top: 8em;
+  /* animation: typewriter 2s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+  position: relative;
+  border-right: 1px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden; */
 }
 
-#imageBlock {
-  float: left;
-  width: 20%;
-  margin-top: 2em;
+#prog_lang>h4,
+#prog_lang>h3 {
+  animation: typewriter 2s steps(50) 1s 1 normal both,
+    blinkTextCursor 500ms steps(50) infinite normal;
+  position: relative;
+  border-right: 1px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-#imageBlock img:active,
-#imageBlock img:hover {
-  transition: 0.5s;
-  opacity: 0.7;
+#prog_lang>h3 {
+  animation: typewriter_ 2s steps(70) 1s 1 normal both,
+    blinkTextCursor 500ms steps(50) infinite normal;
 }
 
-#imageBlock img {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 380px;
+  }
 }
 
-#rightCol {
-  float: left;
-  width: 60%;
-  margin-left: 15%;
+@keyframes typewriter_ {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 210px;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
 }
 
 #iconBlock {
   display: flex;
-  flex-flow: wrap;
-  align-content: center;
-  justify-content: center;
+  flex-flow: nowrap;
+  overflow: auto;
+  margin-right: 5em;
+}
+
+#iconBlock::-webkit-scrollbar {
+  background: transparent;
+  /* make scrollbar transparent */
 }
 
 #iconBlock div {
   display: flex;
   flex-flow: column wrap;
-  align-content: center;
-  justify-content: center;
-  width: 25vw;
-  max-height: 200px;
-  max-width: 200px;
-  min-width: 150px;
-  min-height: 150px;
-  margin-bottom: 2em;
+  align-items: center;
+  min-width: 200px;
+  margin-left: 15%;
+  margin-right: 10%;
+  margin-top: 2em;
 }
 
 #iconBlock div img {
   width: 100%;
   transition: 0.5s;
+  text-align: center;
 }
 
 #iconBlock div img:active,
@@ -138,26 +167,31 @@ h1 {
 }
 
 .iconText {
-  position: absolute;
-  left: 5%;
   opacity: 0;
   cursor: default;
+  font-size: 1.2em;
+  width: 8em;
+  margin-top: 3em;
+  text-align: center
 }
 
 #iconBlock div:active>.iconText,
 #iconBlock div:hover>.iconText {
   transition: 0.5s;
   opacity: 1;
-  font-size: 1.5em;
-}
-
-#iconBlock span:active,
-#iconBlock span:hover {
-  display: none;
 }
 
 section {
   display: inline-block;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+section>p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 70vw;
 }
 
 hr {
@@ -179,7 +213,8 @@ dd {
 
 dd dd,
 dt dd {
-  margin-left: 2em;
+  margin-left: auto;
+  /* margin-right: auto; */
 }
 
 dt {
@@ -196,20 +231,68 @@ dt:hover+dd+dd {
   background-color: #dcdcdc;
 }
 
-.social_link_img img {
-  width: 80px;
+.soc svg {
+  margin-right: 1em;
+  height: 100px;
+  width: 100px;
 }
 
-.social_link_img {
+.soc a {
+  display: inline-block;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin-top: 2em;
+}
+
+.soc a:active,
+.soc a:hover {
+  opacity: 0.5;
+  transform: scale(1.3);
+}
+
+.soc {
   clear: both;
+  margin-left: -2em;
+  padding: 1em;
+  padding-bottom: 0;
 }
 
-#imageBlock img {
-  width: 100%;
+.icon {
+  margin-top: 1em;
+  background: black;
+  border-radius: 100%;
+  color: white;
+  fill: white;
 }
 
-#github {
-  margin-left: -.4em;
+.icon:hover,
+.icon:active {
+  background: white;
+  color: black;
+  fill: black;
+}
+
+.github {
+  background: #6441a5;
+  color: white;
+  fill: white;
+  margin-left: 1em;
+}
+
+.linkedin {
+  background: white;
+  color: #007BB6;
+  fill: #007BB6;
+}
+
+.linkedin:hover,
+.linkedin:active,
+.github:hover,
+.github:active {
+  fill: white;
+  background: black;
+  transition: .6s;
 }
 
 .numbers {
@@ -221,108 +304,104 @@ dt:hover+dd+dd {
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    margin: 1.2em;
+  #title {
+    font-size: 1.3em;
   }
 
-  #topBar {
-    height: 10vh;
+  .list-grid {
+    display: grid;
   }
 
-  #topBar h2 {
-    display: none;
-  }
-
-  #content {
-    position: relative;
-    overflow-y: auto;
-    width: auto;
-    margin: auto auto;
-    top: 10vh;
-    overflow: hidden;
-  }
-
-  #content::-webkit-scrollbar {
-    display: none;
+  .soc {
+    display: flex;
+    float: left;
+    margin-bottom: 3em;
+    margin-left: -3em;
   }
 
   .iconText {
     display: none;
   }
 
-  #prog_lang {
-    text-align: justify;
-  }
-
-  .name {
-    font-size: 3vh;
-    left: auto;
-    text-align: center;
-    margin-left: auto;
-    float: none;
-    position: relative;
-  }
-
-  section {
-    padding: 1em;
-    display: grid;
-  }
-
-  #imageBlock {
-    float: none;
-    left: 50%;
-    margin: auto auto 2em;
-    width: 50vw;
-  }
-
-  #imageBlock img {
-    width: 70%;
-    margin-left: 15%;
-  }
-
-  .secondaryText {
-    display: none;
-  }
-
-  h2 {
-    text-align: center;
-  }
-
-  dl {
-    margin-left: auto;
-    margin-right: auto;
+  #topBar {
+    height: 3em;
   }
 
   dd,
   dt {
     min-width: 30vw;
-    margin-left: auto;
+    margin-left: -1.5em;
+  }
+
+  #main {
+    width: 100%;
+    overflow: hidden;
     margin-right: auto;
   }
 
-  dt:active+dd {
-    background-color: #dcdcdc;
-  }
-
-  dt:active+dd+dd {
-    background-color: #dcdcdc;
-  }
-
-  #rightCol {
-    float: none;
-    margin: 0 1em;
-    width: 100%;
-    overflow: hidden;
-    animation: typing 1s steps(40, start), blink-caret 30s step-end infinite;
-  }
-
-  @keyframes typing {
+  @keyframes typewriter {
     from {
       width: 0;
     }
 
     to {
-      width: 100%;
+      width: 390px;
     }
+  }
+
+  @keyframes typewriter_ {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 210px;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #prog_lang {
+    width: 90vw;
+    margin-top: 10em;
+    padding-bottom: 3em;
+  }
+
+  .green {
+    font-size: .8em;
+    padding-bottom: 15em;
+  }
+
+  #title {
+    font-size: 1.2em;
+  }
+
+  dd,
+  dt {
+    font-size: .8em;
+    min-width: 40vw;
+  }
+
+  dd {
+    padding-left: 2em;
+
+  }
+
+  dl {
+    margin-left: 3em;
+  }
+
+  #iconBlock {
+    margin-right: 0;
+  }
+
+  #iconBlock div {
+    margin-left: 1em;
+    margin-right: 0;
+    padding-bottom: 2em;
+  }
+
+  #iconBlock div img {
+    width: 60%;
   }
 }

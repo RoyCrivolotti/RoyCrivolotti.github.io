@@ -44,7 +44,6 @@ function scrollOnce(event) {
 Pawel Grzybek's scrollIt() function (all credits to this awesome person for this nice and smooth functionality): https://codepen.io/pawelgrzybek/pen/ZeomJB?editors=1010
 */
 function scrollIt(destination, duration = 200, easing = 'linear', callback) {
-
     const easings = {
         linear(t) {
             return t;
