@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
 
 html {
-  overflow: scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -30,7 +30,7 @@ h2 {
 #topBar {
   z-index: 1;
   height: 5em;
-  width: 100%;
+  width: 100vw;
   background: #000;
   top: 0;
   left: 0;
@@ -77,7 +77,7 @@ h2 {
 #prog_lang {
   font-family: 'Anonymous Pro', monospace;
   text-align: justify;
-  width: 350px;
+  width: 400px;
   padding-top: 8em;
   /* animation: typewriter 2s steps(40) 1s 1 normal both,
     blinkTextCursor 500ms steps(40) infinite normal;
@@ -108,7 +108,7 @@ h2 {
   }
 
   to {
-    width: 380px;
+    width: 400px;
   }
 }
 
@@ -118,7 +118,7 @@ h2 {
   }
 
   to {
-    width: 210px;
+    width: 220px;
   }
 }
 
@@ -325,10 +325,9 @@ svg:active path {
   height: auto;
   margin: 0 2rem;
   cursor: pointer;
-  overflow: visible;
 }
 
-.wrapper svg:hover .arrow {
+.wrapper .arrow {
   animation: arrow-anim 2.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
 
@@ -383,31 +382,11 @@ svg:active path {
     overflow: hidden;
     margin-right: auto;
   }
-
-  @keyframes typewriter {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 390px;
-    }
-  }
-
-  @keyframes typewriter_ {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 210px;
-    }
-  }
 }
 
 @media only screen and (max-width: 520px) {
   #prog_lang {
-    width: 90vw;
+    width: 100vw;
     margin-top: 10em;
     padding-bottom: 3em;
   }
@@ -457,10 +436,30 @@ svg:active path {
   }
 
   .right {
-    right: -20vw;
+    right: -10vw;
   }
 
   .left {
     left: -20vw;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 340px;
+    }
+  }
+
+  @keyframes typewriter_ {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 190px;
+    }
   }
 }
