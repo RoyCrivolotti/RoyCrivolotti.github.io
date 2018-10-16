@@ -449,4 +449,18 @@ svg:active path {
   #iconBlock div img {
     width: 60%;
   }
+
+  .wrapper svg {
+    margin-top: -13vw;
+    width: 30px;
+    overflow: hidden;
+  }
+
+  .right {
+    right: -20vw;
+  }
+
+  .left {
+    left: -20vw;
+  }
 }
