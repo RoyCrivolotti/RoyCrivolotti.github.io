@@ -80,6 +80,7 @@ h2 {
   text-align: justify;
   width: 400px;
   padding-top: 8em;
+  align-self: flex-start;
 }
 
 #prog_lang p {

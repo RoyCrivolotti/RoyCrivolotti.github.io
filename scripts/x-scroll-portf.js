@@ -11,7 +11,7 @@
         'Estoy por empezar React y React Native',
         'En Java me interesa aprender Spring, pero por el momento mi experiencia es implementar algoritmos y estructuras de datos avanzadas en Java vainilla');
 
-    var speed = 20; // time delay of print out
+    var speed = 5; // time delay of print out
     var index = 0; // start printing array at this posision
     var arrLength = text[0].length; // the length of the text array
     var scrollAt = 20; // start scrolling up at this many lines
