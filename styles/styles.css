@@ -70,57 +70,6 @@ h2 {
   text-align: justify;
   width: 400px;
   padding-top: 8em;
-  /* animation: typewriter 2s steps(40) 1s 1 normal both,
-    blinkTextCursor 500ms steps(40) infinite normal;
-  position: relative;
-  border-right: 1px solid rgba(255, 255, 255, 0.75);
-  white-space: nowrap;
-  overflow: hidden; */
-}
-
-#prog_lang>h4,
-#prog_lang>h3 {
-  animation: typewriter 2s steps(50) 1s 1 normal both,
-    blinkTextCursor 500ms steps(50) infinite normal;
-  position: relative;
-  border-right: 1px solid rgba(255, 255, 255, 0.75);
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-#prog_lang>h3 {
-  animation: typewriter_ 2s steps(70) 1s 1 normal both,
-    blinkTextCursor 500ms steps(50) infinite normal;
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 380px;
-  }
-}
-
-@keyframes typewriter_ {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 220px;
-  }
-}
-
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255);
-  }
-
-  to {
-    border-right-color: transparent;
-  }
 }
 
 #iconBlock {
@@ -362,25 +311,5 @@ svg:active path {
 
   #iconBlock div {
     padding-bottom: 5em;
-  }
-
-  @keyframes typewriter {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 340px;
-    }
-  }
-
-  @keyframes typewriter_ {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 190px;
-    }
   }
 }
