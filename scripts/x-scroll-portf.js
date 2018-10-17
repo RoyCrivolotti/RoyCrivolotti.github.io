@@ -6,8 +6,8 @@
         'Experimenté un poco con frameworks frontend, como Bootstrap 4 y Bulma',
         '<br><h3>¿En qué estoy ahora ?</h3><br>',
         'Terminando el año de la UBA y la carrera intensiva de desarrollo web full stack de Acámica',
-        'Soy mentor en un curso de OOP en Coursera',
-        'Apoyo mis estudios de ECMAScript 6 con los cursos de Wes Bos',
+        'Soy mentor en un <a href="https://www.coursera.org/learn/object-oriented-java" target="_blank">curso de OOP en Coursera </a>',
+        'Apoyo mis estudios de ECMAScript 6 con los <a href="https://es6.io/" target="_blank">cursos de Wes Bos </a>',
         'Estoy por empezar React y React Native',
         'En Java me interesa aprender Spring, pero por el momento mi experiencia es implementar algoritmos y estructuras de datos avanzadas en Java vainilla');
 
