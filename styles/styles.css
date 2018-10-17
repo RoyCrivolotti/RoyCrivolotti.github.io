@@ -61,6 +61,20 @@ h2 {
   align-items: center;
 }
 
+.introEnd {
+  /* min-height: 50em;
+  max-height: 1000px;
+  height: 50vh; */
+  padding-bottom: 5em;
+  padding-top: 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.introEnd .wrapper {
+  margin-top: 4em;
+}
+
 #prog_lang {
   font-family: 'Anonymous Pro', monospace;
   text-align: justify;
@@ -90,6 +104,7 @@ h2 {
   width: 20vw;
   max-width: 200px;
   transition: 0.5s;
+  transform: scale(1);
 }
 
 #iconBlock div img:active,
@@ -182,6 +197,8 @@ dt:hover+dd+dd {
   height: 100px;
   width: 100px;
   margin-top: 2em;
+  transform: scale(1);
+  transition: 0.5s;
 }
 
 .soc a:active,
@@ -192,7 +209,7 @@ dt:hover+dd+dd {
 
 svg:hover path,
 svg:active path {
-  transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
 }
 
 .icon {
@@ -201,13 +218,6 @@ svg:active path {
   border-radius: 100%;
   color: white;
   fill: white;
-}
-
-.icon:hover,
-.icon:active {
-  background: white;
-  color: black;
-  fill: black;
 }
 
 .github {
@@ -221,15 +231,6 @@ svg:active path {
   background: white;
   color: #007BB6;
   fill: #007BB6;
-}
-
-.linkedin:hover,
-.linkedin:active,
-.github:hover,
-.github:active {
-  fill: white;
-  background: black;
-  transition: .6s;
 }
 
 .numbers {
