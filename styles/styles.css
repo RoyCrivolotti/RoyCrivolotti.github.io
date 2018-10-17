@@ -49,10 +49,6 @@ h2 {
   font-weight: lighter;
 }
 
-#prog_lang p {
-  font-weight: 300;
-}
-
 .green {
   width: 100vw;
   min-height: 50em;
@@ -70,6 +66,10 @@ h2 {
   text-align: justify;
   width: 400px;
   padding-top: 8em;
+}
+
+#prog_lang p {
+  font-weight: 300;
 }
 
 #iconBlock {
