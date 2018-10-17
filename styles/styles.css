@@ -12,6 +12,10 @@ html::-webkit-scrollbar {
   /* make scrollbar transparent */
 }
 
+#introductionText:nth-child(1) {
+  font-size: 2em;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.6em;
@@ -28,34 +32,21 @@ h2 {
 }
 
 #topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1;
   height: 5em;
   width: 100vw;
+  opacity: 0.4;
+  font-size: 0.8em;
   background: #000;
-  top: 0;
-  left: 0;
-  position: fixed;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-name: fadeInRight;
 }
 
 #title {
   margin-left: 1em;
   color: #fff;
   font-weight: lighter;
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(40px);
-  }
-
-  100% {
-    opacity: 0.6;
-    transform: translateX(0);
-  }
 }
 
 #prog_lang p {
@@ -108,7 +99,7 @@ h2 {
   }
 
   to {
-    width: 400px;
+    width: 380px;
   }
 }
 
@@ -133,31 +124,23 @@ h2 {
 }
 
 #iconBlock {
-  display: flex;
-  flex-flow: nowrap;
-  overflow: auto;
-  margin-right: 5em;
-}
-
-#iconBlock::-webkit-scrollbar {
-  background: transparent;
-  /* make scrollbar transparent */
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #iconBlock div {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  min-width: 200px;
-  margin-left: 15%;
-  margin-right: 10%;
-  margin-top: 2em;
+  display: grid;
+  justify-items: center;
 }
 
 #iconBlock div img {
-  width: 100%;
+  width: 20vw;
+  max-width: 200px;
   transition: 0.5s;
-  text-align: center;
 }
 
 #iconBlock div img:active,
@@ -231,6 +214,13 @@ dt:hover+dd+dd {
   background-color: #dcdcdc;
 }
 
+.soc {
+  clear: both;
+  margin-left: -2em;
+  padding: 1em;
+  padding-bottom: 0;
+}
+
 .soc svg {
   margin-right: 1em;
   height: 100px;
@@ -254,13 +244,6 @@ dt:hover+dd+dd {
 svg:hover path,
 svg:active path {
   transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
-}
-
-.soc {
-  clear: both;
-  margin-left: -2em;
-  padding: 1em;
-  padding-bottom: 0;
 }
 
 .icon {
@@ -308,45 +291,6 @@ svg:active path {
   margin-top: 2em;
 }
 
-.wrapper {
-  position: absolute;
-}
-
-.right {
-  right: -10vw;
-}
-
-.left {
-  left: -15vw;
-}
-
-.wrapper svg {
-  width: 50px;
-  height: auto;
-  margin: 0 2rem;
-  cursor: pointer;
-}
-
-.wrapper .arrow {
-  animation: arrow-anim 2.5s cubic-bezier(0.2, 1, 0.3, 1) infinite;
-}
-
-@keyframes arrow-anim {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  5% {
-    transform: translateX(-0.1rem);
-  }
-
-  100% {
-    transform: translateX(1rem);
-    opacity: 0;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   #title {
     font-size: 1.3em;
@@ -364,7 +308,8 @@ svg:active path {
   }
 
   .iconText {
-    display: none;
+    font-size: 0.8em;
+    opacity: 1;
   }
 
   #topBar {
@@ -386,14 +331,14 @@ svg:active path {
 
 @media only screen and (max-width: 520px) {
   #prog_lang {
-    width: 100vw;
-    margin-top: 10em;
+    width: 65vw;
+    margin-top: 20em;
     padding-bottom: 3em;
   }
 
   .green {
     font-size: .8em;
-    padding-bottom: 15em;
+    padding-bottom: 25em;
   }
 
   #title {
@@ -415,32 +360,8 @@ svg:active path {
     margin-left: 3em;
   }
 
-  #iconBlock {
-    margin-right: 0;
-  }
-
   #iconBlock div {
-    margin-left: 1em;
-    margin-right: 0;
-    padding-bottom: 2em;
-  }
-
-  #iconBlock div img {
-    width: 60%;
-  }
-
-  .wrapper svg {
-    margin-top: -13vw;
-    width: 30px;
-    overflow: hidden;
-  }
-
-  .right {
-    right: -10vw;
-  }
-
-  .left {
-    left: -20vw;
+    padding-bottom: 5em;
   }
 
   @keyframes typewriter {
