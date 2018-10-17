@@ -283,7 +283,6 @@ svg:active path {
 @media only screen and (max-width: 520px) {
   #prog_lang {
     width: 65vw;
-    margin-top: 20em;
     padding-bottom: 3em;
   }
 
