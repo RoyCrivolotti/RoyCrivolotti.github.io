@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let svgPaths = document.querySelectorAll('svg path');
+    let svgPaths = document.querySelectorAll('#wrapper svg path');
+    console.log(svgPaths);
 
     document.addEventListener('scroll', () => {
         let bounding = document.getElementById('wrapper').getBoundingClientRect();
