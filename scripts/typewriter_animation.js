@@ -1,5 +1,4 @@
     // each element in the array is to be printed in a new line
-
     var text = new Array(
         '<h3>Java, Javascript, Node, MySQL, HTML & CSS </h3> <br>',
         'Principalmente vainilla',
