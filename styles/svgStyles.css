@@ -16,13 +16,20 @@
     height: auto;
 }
 
-#wrapper svg {
+#wrapper svg,
+#wrapper div {
     transition: all 0.5s;
     transform: scale(1);
 }
 
-#wrapper svg:hover,
-#wrapper svg:active {
+#wrapper:not(:active),
+#wrapper:not(:hover) {
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+#wrapper div:hover,
+#wrapper div:active {
     /* TODO: when the svgs are hovered, they should pop up a bit and gain the natural color of their logos */
     opacity: 1;
     transform: scale(1.3);
