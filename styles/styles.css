@@ -126,8 +126,7 @@ h2 {
 }
 
 #iconBlock div:active>.iconText,
-#iconBlock div:hover>.iconText,
-  {
+#iconBlock div:hover>.iconText {
   transition: 0.5s;
   opacity: 1;
 }
