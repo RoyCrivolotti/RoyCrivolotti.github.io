@@ -99,6 +99,8 @@ h2 {
 #iconBlock div {
   display: grid;
   justify-items: center;
+  grid-template-rows: 1fr 2fr;
+  height: 25em;
 }
 
 #iconBlock div img {
@@ -117,8 +119,8 @@ h2 {
 .iconText {
   opacity: 0;
   cursor: default;
-  font-size: 1.2em;
-  width: 8em;
+  font-size: 1.1em;
+  width: 12em;
   margin-top: 3em;
   text-align: center
 }

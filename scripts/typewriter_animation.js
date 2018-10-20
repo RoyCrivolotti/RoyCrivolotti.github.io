@@ -1,10 +1,9 @@
     // each element in the array is to be printed in a new line
     var text = new Array(
-        '<h3>Java, Javascript, Node, MySQL, HTML & CSS </h3> <br>',
-        'Principalmente vainilla',
-        'Experimenté un poco con frameworks frontend, como Bootstrap 4 y Bulma',
-        '<br><h3>¿En qué estoy ahora ?</h3><br>',
-        'Terminando el año de la UBA y la carrera intensiva de desarrollo web full stack de Acámica',
+        '<h3>Java, Javascript (vainilla), Node, MySQL, HTML & CSS </h3> <br>',
+        'Experimenté un poco con frameworks frontend, como Bootstrap 4 y Bulma, pero superficialmente; hasta el momento programé mayoritariamente sin frameworks',
+        '<br><h3>¿En qué estoy ahora?</h3><br>',
+        'Terminando el primer año de la UBA y la carrera intensiva de desarrollo web full stack de Acámica',
         'Soy mentor en un <a href="https://www.coursera.org/learn/object-oriented-java" target="_blank">curso de OOP en Coursera </a>',
         'Apoyo mis estudios de ECMAScript 6 con los <a href="https://es6.io/" target="_blank">cursos de Wes Bos </a>',
         'Estoy por empezar React y React Native',
