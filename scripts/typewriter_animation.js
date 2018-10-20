@@ -7,7 +7,7 @@
         'Soy mentor en un <a href="https://www.coursera.org/learn/object-oriented-java" target="_blank">curso de OOP en Coursera </a>',
         'Apoyo mis estudios de ECMAScript 6 con los <a href="https://es6.io/" target="_blank">cursos de Wes Bos </a>',
         'Estoy por empezar React y React Native',
-        'En Java me interesa aprender Spring, pero por el momento mi experiencia es implementar algoritmos y estructuras de datos avanzadas en Java vainilla');
+        'En Java me interesa aprender Spring, pero por el momento mi experiencia es implementar algoritmos y estructuras de datos avanzadas');
 
     var speed = 5; // time delay of print out
     var index = 0; // start printing array at this posision
