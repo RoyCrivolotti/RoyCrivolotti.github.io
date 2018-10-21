@@ -87,6 +87,11 @@ h2 {
   font-weight: 300;
 }
 
+#idiomas dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 #iconBlock {
   width: 80vw;
   display: grid;
