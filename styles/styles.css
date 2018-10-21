@@ -100,7 +100,7 @@ h2 {
   display: grid;
   justify-items: center;
   grid-template-rows: 1fr 2fr;
-  height: 25em;
+  height: 24em;
 }
 
 #iconBlock div img {
@@ -168,6 +168,7 @@ dt dd {
 }
 
 dt {
+  font-weight: 600;
   clear: left;
 }
 
@@ -313,6 +314,7 @@ svg:active path {
   }
 
   #iconBlock div {
-    padding-bottom: 5em;
+    height: 20em;
+    padding-bottom: 1em;
   }
 }
