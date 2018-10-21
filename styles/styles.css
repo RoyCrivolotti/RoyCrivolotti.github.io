@@ -281,6 +281,22 @@ svg:active path {
     margin-left: -1.5em;
   }
 
+  #idiomas dl {
+    width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+  }
+
+  #idiomas dt,
+  #idiomas dd {
+    margin-left: auto;
+  }
+
+  #idiomas dd {
+    padding-left: 4em;
+  }
+
   #main {
     width: 100%;
     overflow: hidden;
@@ -311,7 +327,6 @@ svg:active path {
 
   dd {
     padding-left: 2em;
-
   }
 
   dl {
