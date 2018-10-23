@@ -87,23 +87,8 @@ h2 {
   font-weight: 300;
 }
 
-/* #idiomas dl {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin: auto;
-}
-
-#idiomas dt {
-  grid-column: 2/3;
-  width: auto;
-}
-*/
 #idiomas dd,
 #idiomas dt {
-  /* grid-column: 3/4;
-  width: auto; */
-  /* padding-left: 5em; */
   width: auto;
   margin: auto;
 }
@@ -304,17 +289,6 @@ svg:active path {
     margin-left: -1.5em;
   }
 
-  /* #idiomas dd,
-  #idiomas dt {
-    min-width: auto;
-    margin-left: 0;
-  }
-
-  #idiomas dd {
-    margin-left: 70%;
-    min-width: 40px;
-  } */
-
   #main {
     width: 100%;
     overflow: hidden;
@@ -350,18 +324,6 @@ svg:active path {
   dl {
     margin-left: 3em;
   }
-
-  /* #idiomas dd,
-  #idiomas dt {
-    min-width: auto;
-    padding-left: 0;
-    margin-left: 0;
-  }
-
-  #idiomas dd {
-    margin-left: 70%;
-    min-width: 40px;
-  } */
 
   #idiomas dt {
     margin-left: -10vw;
