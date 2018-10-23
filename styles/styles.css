@@ -87,7 +87,7 @@ h2 {
   font-weight: 300;
 }
 
-#idiomas dl {
+/* #idiomas dl {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -98,11 +98,21 @@ h2 {
   grid-column: 2/3;
   width: auto;
 }
-
-#idiomas dd {
-  grid-column: 3/4;
+*/
+#idiomas dd,
+#idiomas dt {
+  /* grid-column: 3/4;
+  width: auto; */
+  /* padding-left: 5em; */
   width: auto;
-  margin-left: 70%;
+  margin: auto;
+}
+
+#idiomas dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin: auto 30vw auto 30vw;
 }
 
 #iconBlock {
@@ -294,7 +304,7 @@ svg:active path {
     margin-left: -1.5em;
   }
 
-  #idiomas dd,
+  /* #idiomas dd,
   #idiomas dt {
     min-width: auto;
     margin-left: 0;
@@ -303,7 +313,7 @@ svg:active path {
   #idiomas dd {
     margin-left: 70%;
     min-width: 40px;
-  }
+  } */
 
   #main {
     width: 100%;
@@ -341,7 +351,7 @@ svg:active path {
     margin-left: 3em;
   }
 
-  #idiomas dd,
+  /* #idiomas dd,
   #idiomas dt {
     min-width: auto;
     padding-left: 0;
@@ -351,6 +361,10 @@ svg:active path {
   #idiomas dd {
     margin-left: 70%;
     min-width: 40px;
+  } */
+
+  #idiomas dt {
+    margin-left: -10vw;
   }
 
   #iconBlock div {
