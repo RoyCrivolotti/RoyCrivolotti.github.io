@@ -1,12 +1,11 @@
     // each element in the array is to be printed in a new line
     var text = new Array(
         '<h3>Java, Javascript (vanilla), Node, MySQL, HTML & CSS </h3> <br>',
-        'Experimenté un poco con frameworks frontend, como Bootstrap 4 y Bulma, pero superficialmente; hasta el momento programé mayoritariamente sin frameworks',
+        'Si bien probé frameworks de frontend como Bootstrap 4 y Bulma, hasta el momento programé mayoritariamente sin frameworks',
         '<br><h3>¿En qué estoy ahora?</h3><br>',
         'Terminando el primer año de la UBA y la carrera intensiva de desarrollo web full stack de Acámica',
         'Soy mentor en un <a href="https://www.coursera.org/learn/object-oriented-java" target="_blank">curso de OOP en Coursera </a>',
-        'Apoyo mis estudios de ECMAScript 6 con los <a href="https://es6.io/" target="_blank">cursos de Wes Bos </a>',
-        'Estoy por empezar React y React Native',
+        'Apoyo mis estudios de ECMAScript 6 con los <a href="https://es6.io/" target="_blank">cursos de Wes Bos, con los cuales estoy por empezar a estudiar React y a profundizar lo que se de Node</a>',
         'En Java me interesa aprender Spring, pero por el momento mi experiencia es implementar algoritmos y estructuras de datos avanzadas');
 
     var speed = 3; // time delay of print out
