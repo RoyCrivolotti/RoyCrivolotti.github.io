@@ -1,0 +1,139 @@
+.superheroWrap {
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+.superheros {
+    justify-self: left;
+    margin-top: -45vh
+}
+
+.superheroWrap ul {
+    position: absolute;
+    display: grid;
+    left: 0;
+    grid-gap: 5px;
+}
+
+.superheroWrap li {
+    display: grid;
+    justify-content: center;
+}
+
+.superheroWrap ul>li>img {
+    width: 20vh;
+}
+
+.superheroWrap .box {
+    width: 50px;
+    height: 50px;
+    padding: 50px;
+    transition: width 0.2s, height 0.6s;
+    position: relative;
+    justify-self: center;
+}
+
+.superheroWrap .box.batman {
+    background: black url(../images/batman.png) center bottom 13px no-repeat;
+}
+
+.superheroWrap .box.wonder {
+    background: black url(../images/wonder.png) center bottom 13px no-repeat;
+}
+
+.superheroWrap .box.flash {
+    background: black url(../images/flash.png) center bottom 13px no-repeat;
+}
+
+.superheroWrap .box.opening {
+    width: 380px;
+    height: 400px;
+    padding-top: 10px;
+}
+
+.superheroWrap .box>* {
+    display: none;
+}
+
+.superheroWrap .box h2 {
+    position: absolute;
+    text-align: left;
+    cursor: default;
+    width: 80%;
+    font-size: 60px;
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: all 0.5s;
+    top: -10px;
+}
+
+.superheroWrap .box.display>* {
+    display: inline;
+}
+
+.superheroWrap .box.open>* {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .superheroWrap {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px 1fr;
+    }
+
+    .superheros {
+        display: flex;
+        margin-top: -15vh;
+        justify-content: center;
+        justify-self: auto;
+    }
+
+    .superheros ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
+        left: auto;
+    }
+
+    .superheroWrap ul>li>img {
+        width: 20vw;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .superheros ul {
+        left: 0;
+        width: 100%;
+    }
+
+    .superheroWrap .box {
+        padding-left: 20px;
+        font-size: 60px;
+        max-width: 280px;
+        max-height: 400px;
+    }
+
+    .superheroWrap .box.batman {
+        background: black url(../images/batman.png) center bottom no-repeat;
+    }
+
+    .superheroWrap .box.wonder {
+        background: black url(../images/wonder.png) center bottom no-repeat;
+    }
+
+    .superheroWrap .box.flash {
+        background: black url(../images/flash.png) center bottom no-repeat;
+    }
+}
+
+/* iPad in Portrait */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {}
+
+/* iPad Pro in Portrait */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {}
