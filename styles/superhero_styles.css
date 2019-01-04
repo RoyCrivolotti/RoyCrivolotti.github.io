@@ -1,20 +1,33 @@
 .superheroWrap {
-    min-height: 70vh;
+    min-height: 80vh;
     display: grid;
-    grid-template-columns: 210px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
     align-items: center;
     font-family: sans-serif;
+}
+
+.superheroWrap>div {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.superheroWrap h3 {
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    padding: 1em 10em;
     font-weight: 100;
-    color: white;
 }
 
 .superheros {
-    justify-self: left;
-    margin-top: -45vh
+    display: grid;
+    align-content: center;
 }
 
 .superheroWrap ul {
-    position: absolute;
     display: grid;
     left: 0;
     grid-gap: 5px;
@@ -26,7 +39,7 @@
 }
 
 .superheroWrap ul>li>img {
-    width: 20vh;
+    max-width: 150px;
 }
 
 .superheroWrap .box {
@@ -36,6 +49,7 @@
     transition: width 0.2s, height 0.6s;
     position: relative;
     justify-self: center;
+    color: white;
 }
 
 .superheroWrap .box.batman {
@@ -84,15 +98,24 @@
 @media only screen and (max-width: 768px) {
     .superheroWrap {
         width: 100%;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100vw;
         grid-template-rows: 180px 1fr;
+    }
+
+    .superheroWrap h3 {
+        padding: 1em 1em;
+        width: 15em;
+    }
+
+    .superheroWrap>div {
+        grid-template-columns: 1fr;
     }
 
     .superheros {
         display: flex;
-        margin-top: -15vh;
+        width: 100vw;
+        margin-top: -5vh;
         justify-content: center;
-        justify-self: auto;
     }
 
     .superheros ul {
