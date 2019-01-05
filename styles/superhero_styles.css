@@ -1,4 +1,4 @@
-.superheroWrap {
+.hero-wrapper {
     min-height: 80vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -7,14 +7,15 @@
     font-family: sans-serif;
 }
 
-.superheroWrap>div {
+.hero-wrapper>div {
     display: grid;
     grid-template-columns: 1fr 9fr;
     grid-template-rows: 1fr;
+    min-height: 300px;
     align-items: center;
 }
 
-.superheroWrap h3 {
+.hero-wrapper h3 {
     text-align: center;
     margin: auto;
     max-width: 600px;
@@ -22,27 +23,27 @@
     font-weight: 100;
 }
 
-.superheros {
+.hero-wrapper .superheros {
     display: grid;
     align-content: center;
 }
 
-.superheroWrap ul {
+.hero-wrapper ul {
     display: grid;
     left: 0;
     grid-gap: 5px;
 }
 
-.superheroWrap li {
+.hero-wrapper li {
     display: grid;
     justify-content: center;
 }
 
-.superheroWrap ul>li>img {
+.hero-wrapper ul>li>img {
     max-width: 150px;
 }
 
-.superheroWrap .box {
+.hero-wrapper .box {
     width: 50px;
     height: 50px;
     padding: 50px;
@@ -52,29 +53,29 @@
     color: white;
 }
 
-.superheroWrap .box.batman {
+.hero-wrapper .box.batman {
     background: black url(../images/batman.png) center bottom 13px no-repeat;
 }
 
-.superheroWrap .box.wonder {
+.hero-wrapper .box.wonder {
     background: black url(../images/wonder.png) center bottom 13px no-repeat;
 }
 
-.superheroWrap .box.flash {
+.hero-wrapper .box.flash {
     background: black url(../images/flash.png) center bottom 13px no-repeat;
 }
 
-.superheroWrap .box.opening {
+.hero-wrapper .box.opening {
     width: 380px;
     height: 400px;
     padding-top: 10px;
 }
 
-.superheroWrap .box>* {
+.hero-wrapper .box>* {
     display: none;
 }
 
-.superheroWrap .box h2 {
+.hero-wrapper .box h2 {
     position: absolute;
     text-align: left;
     cursor: default;
@@ -86,45 +87,45 @@
     top: -10px;
 }
 
-.superheroWrap .box.display>* {
+.hero-wrapper .box.display>* {
     display: inline;
 }
 
-.superheroWrap .box.open>* {
+.hero-wrapper .box.open>* {
     transform: translateX(0%);
     opacity: 1;
 }
 
 @media only screen and (max-width: 768px) {
-    .superheroWrap {
+    .hero-wrapper {
         width: 100%;
         grid-template-columns: 100vw;
         grid-template-rows: 180px 1fr;
     }
 
-    .superheroWrap h3 {
+    .hero-wrapper h3 {
         padding: 1em 1em;
         width: 15em;
     }
 
-    .superheroWrap>div {
+    .hero-wrapper>div {
         grid-template-columns: 1fr;
     }
 
-    .superheros {
+    .hero-wrapper .superheros {
         display: flex;
         width: 100vw;
         margin-top: -5vh;
         justify-content: center;
     }
 
-    .superheros ul {
+    .hero-wrapper .superheros ul {
         grid-template-columns: 1fr 1fr 1fr;
         padding: 0;
         left: auto;
     }
 
-    .superheroWrap ul>li>img {
+    .hero-wrapper ul>li>img {
         width: 20vw;
     }
 }
@@ -135,22 +136,22 @@
         width: 100%;
     }
 
-    .superheroWrap .box {
+    .hero-wrapper .box {
         padding-left: 20px;
         font-size: 60px;
         max-width: 280px;
         max-height: 400px;
     }
 
-    .superheroWrap .box.batman {
+    .hero-wrapper .box.batman {
         background: black url(../images/batman.png) center bottom no-repeat;
     }
 
-    .superheroWrap .box.wonder {
+    .hero-wrapper .box.wonder {
         background: black url(../images/wonder.png) center bottom no-repeat;
     }
 
-    .superheroWrap .box.flash {
+    .hero-wrapper .box.flash {
         background: black url(../images/flash.png) center bottom no-repeat;
     }
 }
