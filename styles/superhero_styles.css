@@ -1,16 +1,17 @@
 .hero-wrapper {
-    min-height: 80vh;
+    min-height: 60vh;
+    max-width: 95vw;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     font-family: sans-serif;
 }
 
 .hero-wrapper>div {
     display: grid;
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
+    grid-gap: 10px;
     min-height: 300px;
     align-items: center;
 }
@@ -19,7 +20,7 @@
     text-align: center;
     margin: auto;
     max-width: 600px;
-    padding: 1em 10em;
+    padding: 2em 1em;
     font-weight: 100;
 }
 
@@ -30,7 +31,6 @@
 
 .hero-wrapper ul {
     display: grid;
-    left: 0;
     grid-gap: 5px;
 }
 
@@ -96,7 +96,7 @@
     opacity: 1;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     .hero-wrapper {
         width: 100%;
         grid-template-columns: 100vw;
