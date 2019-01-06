@@ -40,9 +40,16 @@ document.addEventListener('DOMContentLoaded', () => {
             'wonder': 'Wonder<br><br><span style="margin-left: 60px";>Woman</span>',
         };
 
-        Object.keys(superheros).map(e => document.querySelector('.box').classList.remove(e));
-        document.querySelector('.box').classList.toggle(this.id);
+        const box = document.querySelector('.box');
 
-        document.querySelector('.box h2').innerHTML = superheros[this.id];
+        if (window.getComputedStyle(box).opacity == 1) box.style.opacity == 0;
+        else box.style.opacity == 1;
+
+        setTimeout(() => {
+            Object.keys(superheros).map(e => document.querySelector('.box').classList.remove(e));
+
+            box.classList.toggle(this.id);
+            box.querySelector('h2').innerHTML = superheros[this.id];
+        }, 500);
     }
 });
