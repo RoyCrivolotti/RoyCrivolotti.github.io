@@ -7,16 +7,30 @@ document.addEventListener('DOMContentLoaded', () => {
             second = 'opening',
             third = 'open';
 
+        const element = this.querySelector('#clickMe');
+
         if (this.classList.contains(first))[first, third] = [third, first];
+        else {
+            element.classList.toggle('hide');
+            setTimeout(() => element.style.display = 'none', 450);
+        }
 
         this.classList.toggle(first);
 
         new Promise((resolve, reject) => {
-            setTimeout(() => {
-                this.classList.toggle(second)
-                resolve(true);
-            }, 500);
-        }).then(result => setTimeout(() => this.classList.toggle(third), 500));
+                setTimeout(() => {
+                    this.classList.toggle(second)
+                    resolve(true);
+                }, 500);
+            }).then(result => setTimeout(() => this.classList.toggle(third), 500))
+            .then(result => {
+                if (!this.classList.contains(first)) {
+                    element.style.display = 'inline';
+                    setTimeout(() => {
+                        element.classList.toggle('hide');
+                    }, 500);
+                }
+            });
     }
 
     function loadSuperHero() {
