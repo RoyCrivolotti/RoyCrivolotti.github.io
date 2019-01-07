@@ -44,6 +44,10 @@ h2 {
   background-color: rgb(0, 0, 0, 0.4)
 }
 
+#topbar h1 {
+  cursor: default;
+}
+
 #topbar img {
   width: 6vw;
   max-width: 40px;
@@ -56,38 +60,75 @@ nav {
   position: fixed;
   margin-top: 3em;
   align-self: flex-end;
+  z-index: 30;
 }
 
 nav ul {
   display: grid;
   height: 95vh;
   width: 100vw;
+  background: rgb(154, 187, 184, 0.6);
+  opacity: 1;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(11, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   justify-items: center;
   align-items: center;
   padding: 0;
+  /* margin-top: -120vh; */
+  transition: all 0.5s;
 }
 
 nav ul li {
-  display: block;
+  display: grid;
   max-width: 80vw;
   line-height: normal;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: 500;
+  font-size: 1.5em;
+  font-variant: small-caps;
+  justify-self: center;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  transform: scale(1.1);
 }
 
 nav ul li:last-of-type {
   align-self: end;
 }
 
-/* TODO: nav first changes display, then animates a dropdown menu */
-nav.hide {
-  display: none;
+nav hr {
+  width: 50vw;
+  opacity: 0.4;
+  border-color: white;
 }
 
-#menu-attribution,
+/* TODO: nav first changes display, then animates a dropdown menu */
+nav ul.hide {
+  margin-top: -200vh;
+}
+
+/* TODO:  */
+main.navactive {
+  transition: all 0.5s;
+  opacity: 0.2;
+}
+
+#topbar.activenav {
+  transition: all 0.5s;
+  opacity: 0.8;
+}
+
+#menu-attribution span,
 #menu-attribution a {
   font-size: 0.8em;
-  opacity: 0.4;
+  opacity: 0.6;
   color: black;
   text-decoration: none;
 }
@@ -335,6 +376,10 @@ svg:active path {
     margin-top: -0.5em;
   }
 
+  nav {
+    margin-top: 1.4em;
+  }
+
   dd,
   dt {
     min-width: 30vw;
@@ -349,6 +394,11 @@ svg:active path {
 }
 
 @media only screen and (max-width: 520px) {
+  nav {
+    margin-top: 1em;
+    font-size: 1.2em;
+  }
+
   #introduction>div {
     width: 65vw;
     padding-bottom: 3em;
