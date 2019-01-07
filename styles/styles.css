@@ -101,13 +101,22 @@ nav.hide {
 #introduction {
   width: 100vw;
   min-height: 50em;
-  /* max-height: 1000px; */
   height: auto;
   background-color: #7DCBC4;
   display: flex;
   padding-bottom: 2em;
   justify-content: center;
-  align-items: center;
+}
+
+#introduction>div {
+  font-family: 'Anonymous Pro', monospace;
+  width: 400px;
+  padding-top: 3em;
+  align-self: initial;
+}
+
+#introduction>div p {
+  font-weight: 300;
 }
 
 #prog-languages {
@@ -119,17 +128,6 @@ nav.hide {
 
 #prog-languages #wrapper {
   margin-top: 4em;
-}
-
-#introduction>div {
-  font-family: 'Anonymous Pro', monospace;
-  width: 400px;
-  padding-top: 3em;
-  align-self: center;
-}
-
-#introduction>div p {
-  font-weight: 300;
 }
 
 #languages dd,
