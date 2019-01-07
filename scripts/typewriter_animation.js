@@ -1,12 +1,12 @@
     // each element in the array is to be printed in a new line
     var text = new Array(
         '<h3>Java, Javascript (vanilla), Node, MySQL, HTML & CSS </h3> <br>',
-        'Si bien probé frameworks de frontend como Bootstrap 4 y Bulma, hasta el momento programé mayoritariamente sin frameworks',
+        '<p>Si bien probé frameworks de frontend como Bootstrap 4 y Bulma, hasta el momento programé mayoritariamente sin frameworks</p>',
         '<br><h3>¿En qué estoy ahora?</h3><br>',
-        'Terminando el primer año de la UBA y la carrera intensiva de desarrollo web full stack de Acámica',
-        'Soy mentor en un <a href="https://www.coursera.org/learn/object-oriented-java" target="_blank">curso de OOP en Coursera </a>',
-        'Apoyo mis estudios de ECMAScript 6 con los <a href="https://wesbos.com/courses/" target="_blank">cursos de Wes Bos</a>, con los cuales estoy por empezar a estudiar React y a profundizar lo que se de Node',
-        'En Java me interesa aprender Spring, pero por el momento mi experiencia es implementar algoritmos y estructuras de datos avanzadas');
+        '<p>Terminando el primer año de la UBA y la carrera intensiva de desarrollo web full stack de Acámica</p>',
+        '<p>Soy mentor en un <a href="https://www.coursera.org/learn/object-oriented-java" target="_blank">curso de OOP en Coursera </a></p>',
+        '<p>Apoyo mis estudios de ECMAScript 6 con los <a href="https://wesbos.com/courses/" target="_blank">cursos de Wes Bos</a>, con los cuales estoy por empezar a estudiar React y a profundizar lo que se de Node</p>',
+        '<p>En Java me interesa aprender Spring, pero por el momento mi experiencia es implementar algoritmos y estructuras de datos avanzadas</p>');
 
     var speed = 3; // time delay of print out
     var index = 0; // start printing array at this posision
@@ -22,7 +22,7 @@
         var destination = document.getElementById('introductionText');
 
         while (row < index) {
-            contents += text[row++] + '<br />';
+            contents += text[row++];
         }
 
         destination.innerHTML = contents + text[index].substring(0, textPos) + '_';

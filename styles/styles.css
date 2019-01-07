@@ -49,11 +49,16 @@ h2 {
   font-weight: lighter;
 }
 
-.green {
+nav {
+  width: 100vw;
+}
+
+#introduction {
   width: 100vw;
   min-height: 50em;
-  max-height: 1000px;
-  height: 80vh;
+  /* max-height: 1000px; */
+  height: auto;
+
   background-color: #7DCBC4;
   display: flex;
   padding-bottom: 2em;
@@ -61,39 +66,35 @@ h2 {
   align-items: center;
 }
 
-.introEnd {
-  /* min-height: 50em;
-  max-height: 1000px;
-  height: 50vh; */
+#prog-languages {
   padding-bottom: 5em;
   padding-top: 5em;
   justify-content: center;
   align-items: center;
 }
 
-.introEnd #wrapper {
+#prog-languages #wrapper {
   margin-top: 4em;
 }
 
-#prog_lang {
+#introduction>div {
   font-family: 'Anonymous Pro', monospace;
   text-align: justify;
   width: 400px;
-  padding-top: 6em;
-  align-self: flex-start;
+  align-self: center;
 }
 
-#prog_lang p {
+#introduction>div p {
   font-weight: 300;
 }
 
-#idiomas dd,
-#idiomas dt {
+#languages dd,
+#languages dt {
   width: auto;
   margin: auto;
 }
 
-#idiomas dl {
+#languages dl {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -259,7 +260,7 @@ svg:active path {
   font-size: 0.9em;
 }
 
-.newItem {
+.newitem {
   margin-top: 2em;
 }
 
@@ -302,14 +303,11 @@ svg:active path {
 }
 
 @media only screen and (max-width: 520px) {
-  #prog_lang {
+  #introduction>div {
     width: 65vw;
     padding-bottom: 3em;
-  }
-
-  .green {
     font-size: .8em;
-    padding-bottom: 25em;
+    align-self: baseline;
   }
 
   #title {
@@ -330,7 +328,7 @@ svg:active path {
     margin-left: 3em;
   }
 
-  #idiomas dt {
+  #languages dt {
     margin-left: -10vw;
   }
 
