@@ -42,7 +42,9 @@ h2 {
   height: 5em;
   width: 100vw;
   font-size: 0.8em;
-  /* background-color: rgb(0, 0, 0, 0.4) */
+  opacity: 0.5;
+  z-index: 100;
+  background-color: rgb(0, 0, 0, 0.3)
 }
 
 #topbar h1 {
@@ -64,6 +66,14 @@ h2 {
   transform: scale(1.1);
   transition: all 0.1s;
   cursor: pointer;
+}
+
+#topbar h1.navactive {
+  opacity: 0;
+}
+
+#topbar.navactive {
+  background: rgba(255, 255, 255, 1);
 }
 
 nav {
@@ -135,7 +145,6 @@ nav ul.hide {
 main.navactive {
   opacity: 0.1;
 }
-
 
 main {
   transition: all 0.3s;

@@ -41,6 +41,7 @@
 
 #hero-wrapper ul>li>img {
     max-width: 150px;
+    z-index: 5;
 }
 
 #hero-wrapper .box {
@@ -54,6 +55,7 @@
     color: white;
     transition: all .5s;
     opacity: 1;
+    z-index: 5;
 }
 
 #hero-wrapper .box.batman {
