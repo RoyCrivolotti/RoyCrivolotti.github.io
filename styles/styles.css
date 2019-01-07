@@ -43,6 +43,14 @@ h2 {
   background-color: rgb(0, 0, 0, 0.4)
 }
 
+#topbar img {
+  width: 6vw;
+  max-width: 40px;
+  align-self: center;
+  justify-self: right;
+  margin-right: 3vw;
+}
+
 #title {
   margin-left: 1em;
   color: #fff;
@@ -183,7 +191,6 @@ dd {
 dd dd,
 dt dd {
   margin-left: auto;
-  /* margin-right: auto; */
 }
 
 dt {
@@ -287,6 +294,11 @@ svg:active path {
 
   #topbar {
     height: 3em;
+  }
+
+  #topbar img {
+    max-width: 20px;
+    margin-top: -0.5em;
   }
 
   dd,
