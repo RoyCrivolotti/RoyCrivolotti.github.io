@@ -12,7 +12,7 @@ html::-webkit-scrollbar {
   /* make scrollbar transparent */
 }
 
-#introductionText:nth-child(1) {
+#animated_intro:nth-child(1) {
   font-size: 2em;
 }
 
@@ -31,7 +31,7 @@ h2 {
   margin-bottom: 2em;
 }
 
-#topBar {
+#topbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -58,7 +58,6 @@ nav {
   min-height: 50em;
   /* max-height: 1000px; */
   height: auto;
-
   background-color: #7DCBC4;
   display: flex;
   padding-bottom: 2em;
@@ -101,7 +100,7 @@ nav {
   margin: auto 30vw auto 30vw;
 }
 
-#iconBlock {
+#iconblock {
   width: 80vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -110,14 +109,14 @@ nav {
   margin-right: auto;
 }
 
-#iconBlock>div {
+#iconblock>div {
   display: grid;
   justify-items: center;
   grid-template-rows: 1fr 1fr;
   height: 24em;
 }
 
-#iconBlock div img {
+#iconblock div img {
   width: 20vw;
   max-width: 200px;
   align-self: center;
@@ -125,8 +124,8 @@ nav {
   transform: scale(1);
 }
 
-#iconBlock div img:active,
-#iconBlock div img:hover {
+#iconblock div img:active,
+#iconblock div img:hover {
   opacity: 0.5;
   transform: scale(1.3);
 }
@@ -144,8 +143,8 @@ a {
   text-align: center
 }
 
-#iconBlock div:active>.iconText,
-#iconBlock div:hover>.iconText {
+#iconblock div:active>.iconText,
+#iconblock div:hover>.iconText {
   transition: 0.5s;
   opacity: 1;
 }
@@ -285,7 +284,7 @@ svg:active path {
     opacity: 1;
   }
 
-  #topBar {
+  #topbar {
     height: 3em;
   }
 
@@ -332,7 +331,7 @@ svg:active path {
     margin-left: -10vw;
   }
 
-  #iconBlock div {
+  #iconblock div {
     height: 20em;
     padding-bottom: 1em;
   }

@@ -19,7 +19,7 @@
     function typewriter() {
         contents = ' ';
         row = Math.max(0, index - scrollAt);
-        var destination = document.getElementById('introductionText');
+        var destination = document.getElementById('animated_intro');
 
         while (row < index) {
             contents += text[row++];
