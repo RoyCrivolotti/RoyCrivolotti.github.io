@@ -113,6 +113,9 @@ nav ul li a {
   justify-self: center;
   text-decoration: none;
   transition: all 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 nav ul li:not(#menu-attribution) a {
