@@ -49,11 +49,20 @@ h2 {
 }
 
 #topbar img {
-  width: 6vw;
-  max-width: 40px;
+  width: 10vw;
+  max-width: 60px;
+  padding: 1em 2em;
+  padding-left: 3em;
   align-self: center;
   justify-self: right;
   margin-right: 3vw;
+}
+
+#topbar img:hover,
+#topbar img:active {
+  transform: scale(1.1);
+  transition: all 0.1s;
+  cursor: pointer;
 }
 
 nav {
@@ -74,8 +83,8 @@ nav ul {
   justify-items: center;
   align-items: center;
   padding: 0;
-  /* margin-top: -120vh; */
-  transition: all 0.5s;
+  margin-top: 1em;
+  transition: all 0.3s;
 }
 
 nav ul li {
@@ -92,7 +101,7 @@ nav ul li a {
   font-variant: small-caps;
   justify-self: center;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 nav ul li:not(#menu-attribution) a {
@@ -115,21 +124,23 @@ nav hr {
   border-color: white;
 }
 
-/* TODO: this class should be activated from the get go */
 nav ul.hide {
-  margin-top: -200vh;
+  display: none;
 }
 
-/* TODO:  */
 main.navactive {
-  transition: all 0.5s;
   opacity: 0.1;
 }
 
-#topbar.activenav {
-  transition: all 0.5s;
-  opacity: 0.8;
+
+main {
+  transition: all 0.3s;
 }
+
+/* #topbar.navactive {
+  transition: all 0.3s;
+  opacity: 0.8;
+} */
 
 #menu-attribution span,
 #menu-attribution a {
