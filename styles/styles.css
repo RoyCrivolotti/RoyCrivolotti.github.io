@@ -124,6 +124,7 @@ nav.hide {
 #introduction>div {
   font-family: 'Anonymous Pro', monospace;
   width: 400px;
+  padding-top: 3em;
   align-self: center;
 }
 
