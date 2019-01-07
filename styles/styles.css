@@ -42,7 +42,7 @@ h2 {
   height: 5em;
   width: 100vw;
   font-size: 0.8em;
-  background-color: rgb(0, 0, 0, 0.4)
+  /* background-color: rgb(0, 0, 0, 0.4) */
 }
 
 #topbar h1 {

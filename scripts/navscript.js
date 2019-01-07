@@ -22,6 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(() => second());
     }
 
+    function topbarColor(e) {
+        const topbar = document.querySelector('#topbar');
+        let bounding = document.getElementById('prog-languages').getBoundingClientRect();
+
+        if (bounding.top <= 30) {
+            topbar.querySelector('img').src = '/images/black-menu.svg';
+            topbar.querySelector('h1').style.color = 'black';
+        } else {
+            topbar.querySelector('h1').style.color = 'white';
+            topbar.querySelector('img').src = '/images/white-menu.svg';
+        }
+    }
+
     document.querySelector('#topbar img').addEventListener('click', togglenav);
     indexes.forEach(index => index.addEventListener('click', togglenav));
+    document.addEventListener('scroll', topbarColor);
 }, false);
