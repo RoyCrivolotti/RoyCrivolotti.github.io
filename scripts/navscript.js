@@ -10,9 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         indexes = [...document.querySelectorAll('nav ul li')];
 
     let first = () => list.classList.toggle('hide');
-    let second = () => setTimeout(() => {
-        main.classList.toggle('navactive');
-    }, 50);
+    let second = () => main.classList.toggle('navactive');
 
 
     // Toggle the fade in/out – I also use a display: none on the unordered list, which I toggle here in order with a promise, just in case, as a double check to make sure it's not showing the list when it's supposed to be opaque/hidden
