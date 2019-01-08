@@ -233,7 +233,11 @@ main {
 }
 
 #languages div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   width: auto;
+  justify-content: center;
 }
 
 /* #languages dd,
