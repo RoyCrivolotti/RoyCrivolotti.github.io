@@ -211,7 +211,7 @@ main {
   margin-top: 4em;
 }
 
-#languages dd,
+/* #languages dd,
 #languages dt {
   width: auto;
   margin: auto;
@@ -222,7 +222,7 @@ main {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   margin: auto 30vw auto 30vw;
-}
+} */
 
 #iconblock {
   width: 80vw;
@@ -386,6 +386,24 @@ svg:active path {
   margin-top: 2em;
 }
 
+#portfolio {
+  display: grid;
+}
+
+#portfolio>h3 {
+  font-family: 'Kadwa';
+  font-size: 15px;
+  font-weight: 600;
+  justify-self: center;
+  opacity: 1;
+  margin-top: -1em;
+}
+
+#portfolio a {
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 @media only screen and (max-width: 768px) {
   #title {
     font-size: 1.3em;
@@ -469,9 +487,9 @@ svg:active path {
     margin-left: 3em;
   }
 
-  #languages dt {
+  /* #languages dt {
     margin-left: -10vw;
-  }
+  } */
 
   #iconblock div {
     height: 20em;
