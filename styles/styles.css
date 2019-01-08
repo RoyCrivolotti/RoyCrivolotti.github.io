@@ -211,6 +211,31 @@ main {
   margin-top: 4em;
 }
 
+#languages dl {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+#languages div {
+  width: auto;
+  padding: 0 10vw;
+}
+
+#languages dd,
+#languages dt {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  clear: both;
+  text-align: center;
+  min-width: auto;
+}
+
+#languages div {
+  width: auto;
+}
+
 /* #languages dd,
 #languages dt {
   width: auto;
@@ -397,7 +422,7 @@ svg:active path {
   justify-self: center;
   opacity: 1;
   /* margin-top: -1em; */
-  padding-bottom: 3em;
+  padding-bottom: 2em;
 }
 
 #portfolio a {
@@ -450,6 +475,10 @@ svg:active path {
     width: 100%;
     overflow: hidden;
     margin-right: auto;
+  }
+
+  #portfolio>h3 {
+    padding-bottom: 0;
   }
 }
 
