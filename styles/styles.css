@@ -90,7 +90,7 @@ nav ul {
   background: rgb(154, 187, 184, 0.6);
   opacity: 1;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(13, 1fr);
   justify-items: center;
   align-items: center;
   padding: 0;
