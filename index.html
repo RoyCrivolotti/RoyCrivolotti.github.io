@@ -293,8 +293,9 @@
 
     <section id='portfolio'>
       <h2 id='icons'>Algunos proyectos</h2>
-      <div id='iconblock'>
+      <h3> Hover the proyects logos!</h3>
 
+      <div id='iconblock'>
         <div>
           <a href='https://github.com/RoyCrivolotti/SocialNetworkGraphs' target='_blank'><img src='images/graph_conn.png'
               alt='Graphs'></a>
@@ -368,6 +369,12 @@
           </div>
           <span class='iconText'>Movie vs Movie</span>
         </div>
+
+        <script>
+          const portfolio_logos = [...document.querySelectorAll('#portfolio #iconblock a')];
+
+          portfolio_logos.forEach(el => el.addEventListener('contextmenu', e => e.preventDefault(), false));
+        </script>
       </div>
     </section>
 
