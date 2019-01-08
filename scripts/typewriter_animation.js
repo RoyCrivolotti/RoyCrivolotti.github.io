@@ -8,7 +8,7 @@
         '<p>Apoyo mis estudios de ECMAScript 6 con los <a href="https://wesbos.com/courses/" target="_blank">cursos de Wes Bos</a>, con los cuales estoy por empezar a estudiar React y a profundizar lo que se de Node</p>',
         '<p>En Java me interesa aprender Spring, pero por el momento mi experiencia es implementar algoritmos y estructuras de datos avanzadas</p>');
 
-    var speed = 3; // time delay of print out
+    var speed = 10; // time delay of print out
     var index = 0; // start printing array at this posision
     var arrLength = text[0].length; // the length of the text array
     var scrollAt = 20; // start scrolling up at this many lines
