@@ -330,6 +330,8 @@ dt {
 
 dd {
   width: 35vw;
+  color: black;
+  transition: all 0.2s;
 }
 
 dd dd,
