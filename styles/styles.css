@@ -344,12 +344,8 @@ dt {
 
 dt:active+dd,
 dt:hover+dd {
-  background-color: #dcdcdc;
-}
-
-dt:active+dd+dd,
-dt:hover+dd+dd {
-  background-color: #dcdcdc;
+  transition: all 0.2s;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .soc {
