@@ -464,7 +464,7 @@ svg:active path {
     }
 }
 
-@media only screen and (max-width: 768px) and (orientarion: portrait) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
     #introduction {
         padding-top: 3em;
     }
