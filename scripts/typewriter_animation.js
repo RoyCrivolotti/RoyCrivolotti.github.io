@@ -1,6 +1,6 @@
 // each element in the array is to be printed in a new line
 const text = [
-	'<h3>Java, C# .NET. Javascript (vanilla), Node, MySQL, HTML & CSS </h3> <br>',
+	'<h3>Java, C# .NET, Javascript (vanilla), Node, MySQL, HTML & CSS </h3> <br>',
 	'<p>Estoy disfrutando de mi primera experiencia laboral como desarrollador en Globant, aprendiendo C#.NET</p>',
 	'<br><h3>¿Qué más me mantiene ocupado ahora?</h3><br>',
 	'<p>Terminé el primer año de la UBA y la carrera intensiva de desarrollo web full stack de Acámica</p>',
