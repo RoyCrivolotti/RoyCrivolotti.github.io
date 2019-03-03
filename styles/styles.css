@@ -417,14 +417,6 @@ svg:active path {
         font-size: 1.3em;
     }
 
-    #introduction {
-        padding-top: 3em;
-    }
-
-    ul.navitem {
-        margin-top: 2.6em;
-    }
-
     .list-grid {
         display: grid;
     }
@@ -442,7 +434,7 @@ svg:active path {
     }
 
     #topbar {
-        height: 5em;
+        height: 3em;
     }
 
     #topbar img {
@@ -469,6 +461,20 @@ svg:active path {
 
     #portfolio>h3 {
         padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientarion: portrait) {
+    #introduction {
+        padding-top: 3em;
+    }
+
+    #topbar {
+        height: 5em;
+    }
+
+    ul.navitem {
+        margin-top: 2.6em;
     }
 }
 
