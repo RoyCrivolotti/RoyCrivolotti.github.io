@@ -44,10 +44,6 @@
     opacity: 0.5;
 }
 
-#wrapper div:nth-of-type(5) {
-    grid-column: 2/3;
-}
-
 svg {
     width: 100%;
     height: auto;
@@ -90,6 +86,40 @@ svg path {
 
 #purple {
     fill: #9C54B8;
+}
+
+#netsvg .cls-1 {
+    fill: #fff;
+}
+
+#netsvg .cls-2,
+#netsvg .cls-3 {
+    fill: #000000;
+}
+
+#netsvg .cls-2 {
+    opacity: 0.1;
+}
+
+#csvg .cls-1 {
+    fill: #fff;
+}
+
+#csvg .cls-2,
+#csvg .cls-3 {
+    fill: #000000;
+}
+
+#csvg .cls-2 {
+    opacity: 0.1;
+}
+
+#netsvg path,
+#csvg path {
+    stroke-width: 1.5;
+    stroke-dasharray: 150px;
+    stroke-dashoffset: 150px;
+    animation-duration: 8s;
 }
 
 .animationName {
