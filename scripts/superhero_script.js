@@ -2,11 +2,18 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     let previousOpenHero = document.querySelector('#hero-wrapper .superheros #batman');
+    let isEventAlreadyOn = false;
 
     document.querySelector('.box').addEventListener('click', toggleOpen);
     document.querySelectorAll('.superheros img').forEach(img => img.addEventListener('click', loadSuperHero));
 
-    function toggleOpen() {
+    function toggleOpen(event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (isEventAlreadyOn) return;
+        else isEventAlreadyOn = true;
+
         let first = 'display';
         const second = 'opening';
         let third = 'open';
@@ -34,10 +41,19 @@ document.addEventListener('DOMContentLoaded', () => {
                         element.classList.toggle('hide');
                     }, 500);
                 }
-            });
+
+                return true;
+            })
+            .then(() => isEventAlreadyOn = false);
     }
 
-    function loadSuperHero() {
+    function loadSuperHero(event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (isEventAlreadyOn) return;
+        else isEventAlreadyOn = true;
+
         const superheros = {
             batman: 'I\'m<br><br>Batman',
             flash: 'The<br><br>Flash',
@@ -45,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         if (previousOpenHero === this) {
+            isEventAlreadyOn = false;
             document.querySelector('.box').click();
             return;
         }
@@ -66,7 +83,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     box.classList.toggle('hide');
                     box.classList.toggle(this.id);
-                }, 580)
-            });
+                }, 580);
+
+
+                return true;
+            })
+            .then(() => isEventAlreadyOn = false);
     }
 });
