@@ -9,11 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let isInViewPort = element => {
 		const bounding = element.getBoundingClientRect();
 
-		console.log(element.clientHeight);
-		console.log(document.documentElement.clientHeight);
-
 		if (element.clientHeight > document.documentElement.clientHeight) {
-			console.log('hi');
 			return bounding.top < 125;
 		}
 
