@@ -1,6 +1,8 @@
 /* eslint-disable */
 
 document.addEventListener('DOMContentLoaded', () => {
+    let previousOpenHero = document.querySelector('#hero-wrapper .superheros #batman');
+
     document.querySelector('.box').addEventListener('click', toggleOpen);
     document.querySelectorAll('.superheros img').forEach(img => img.addEventListener('click', loadSuperHero));
 
@@ -41,6 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
             flash: 'The<br><br>Flash',
             wonder: 'Wonder<br><br><span style="margin-left: 60px";>Woman</span>',
         };
+
+        if (previousOpenHero === this) {
+            document.querySelector('.box').click();
+            return;
+        }
+        else previousOpenHero = this;
 
         const box = document.querySelector('#hero-wrapper .box');
 
