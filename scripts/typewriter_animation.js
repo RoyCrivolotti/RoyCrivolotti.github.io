@@ -5,7 +5,7 @@ const text = [
 	'<br><h3>¿Qué más me mantiene ocupado ahora?</h3><br>',
 	'<p>Terminé el primer año de la UBA y la carrera intensiva de desarrollo web full stack de Acámica</p>',
 	'<p>Soy mentor en un <a href="https://www.coursera.org/learn/object-oriented-java" target="_blank">curso de OOP en Coursera </a></p>',
-	'<p>Apoyo mis estudios de ECMAScript 6 con los <a href="https://wesbos.com/courses/" target="_blank">cursos de Wes Bos</a>, con los cuales estoy empezando a estudiar React y a profundizar lo que se de Node</p>',
+	'<p>Los últimos temas me llamaron la atención fueron Docker y Azure Functions</p>',
 	'<p>Siempre estoy interesado en aprender tecnologías nuevas y pulir lo que ya se</p>',
 ];
 
