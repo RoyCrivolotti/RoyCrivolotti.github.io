@@ -428,7 +428,6 @@ svg:active path {
     }
 
     .soc {
-        display: flex;
         float: left;
         margin-bottom: 3em;
         margin-left: -3em;
