@@ -1,3 +1,4 @@
+
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
@@ -28,7 +29,7 @@ module.exports = {
 	plugins: [
 		// TODO: Set up svgs and else for html plugin to work...
 		// new HtmlWebPackPlugin({ template: './index.html', filename: './index.html' }),
-		new MiniCssExtractPlugin({ filename: '[name],css', chunkFilename: 'main.css' }),
+		new MiniCssExtractPlugin({ filename: '[name].css', chunkFilename: 'main.css' }),
 	],
 
 	module: {
