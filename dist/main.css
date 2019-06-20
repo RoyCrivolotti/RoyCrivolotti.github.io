@@ -811,15 +811,15 @@ svg path {
 }
 
 #hero-wrapper .box.batman {
-    background: black url(/48589891b4e3c6cb6b72b88547c089e3.png) center bottom 13px no-repeat;
+    background: black url(48589891b4e3c6cb6b72b88547c089e3.png) center bottom 13px no-repeat;
 }
 
 #hero-wrapper .box.wonder {
-    background: black url(/1bf0b6653916b81bb6ca4d8746b901e5.png) center bottom 13px no-repeat;
+    background: black url(1bf0b6653916b81bb6ca4d8746b901e5.png) center bottom 13px no-repeat;
 }
 
 #hero-wrapper .box.flash {
-    background: black url(/b4088f7920819af72f5f9c7f8c61cefe.png) center bottom 13px no-repeat;
+    background: black url(b4088f7920819af72f5f9c7f8c61cefe.png) center bottom 13px no-repeat;
 }
 
 #hero-wrapper .box.opening {
@@ -928,15 +928,15 @@ svg path {
     }
 
     #hero-wrapper .box.batman {
-        background: black url(/48589891b4e3c6cb6b72b88547c089e3.png) center bottom no-repeat;
+        background: black url(48589891b4e3c6cb6b72b88547c089e3.png) center bottom no-repeat;
     }
 
     #hero-wrapper .box.wonder {
-        background: black url(/1bf0b6653916b81bb6ca4d8746b901e5.png) center bottom no-repeat;
+        background: black url(1bf0b6653916b81bb6ca4d8746b901e5.png) center bottom no-repeat;
     }
 
     #hero-wrapper .box.flash {
-        background: black url(/b4088f7920819af72f5f9c7f8c61cefe.png) center bottom no-repeat;
+        background: black url(b4088f7920819af72f5f9c7f8c61cefe.png) center bottom no-repeat;
     }
 }
 
