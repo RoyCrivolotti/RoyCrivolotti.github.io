@@ -1,17 +1,23 @@
+/* eslint-disable max-len */
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
-	entry: ['./src/navscript.js',
-		'./src/superheros.js',
-		'./src/typewriter.js',
-		'./src/svgScroll.js',
-		'./styles/styles.css',
+	entry: ['./styles/styles.css',
 		'./styles/svgStyles.css',
 		'./styles/superheros.css',
 		'./styles/normalize.css',
+		'./src/navscript.js',
+		'./src/superheros.js',
+		'./src/typewriter.js',
+		'./src/svgScroll.js',
 	],
+
+	output: {
+		path: path.resolve(__dirname, 'dist'),
+		filename: 'bundle.js',
+	},
 
 	optimization: {
 		splitChunks: {
@@ -27,8 +33,6 @@ module.exports = {
 	},
 
 	plugins: [
-		// TODO: Set up svgs and else for html plugin to work...
-		// new HtmlWebPackPlugin({ template: './index.html', filename: './index.html' }),
 		new MiniCssExtractPlugin({ filename: '[name].css', chunkFilename: 'main.css' }),
 	],
 
@@ -37,7 +41,8 @@ module.exports = {
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				use: { loader: 'babel-loader' },
+				use: { loader: 'babel-loader',
+					options: { presets: ['@babel/preset-env'] } },
 			},
 			{
 				test: /\.html$/,
@@ -54,7 +59,6 @@ module.exports = {
 				use: [
 					{
 						loader: MiniCssExtractPlugin.loader,
-						// options: { publicPath: '/', url: false },
 					},
 					'css-loader',
 				],
