@@ -19,9 +19,16 @@
             const msie = ua.indexOf('MSIE ');
 
             if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv:11\./)) {
-                // If Internet Explorer, return version number
-                document.write('<h2 style="position: fixed; z-index: 2 !important; transform: translate(0px, -30%); background: black; color: white; width: 100%; height: auto; min-height: 60px; margin-top: 1.5vw;">IE is not supported...please switch to a modern browser.</h2>');
-                document.getElementsByTagName('body')[0].style.margin = 0;
+                // If its Internet Explorer, add a banner
+                var header = document.getElementById('topbar');
+                var newElement = document.createElement('h2');
+                newElement.innerText = 'IE is not supported. Please switch to a modern browser!';
+                newElement.style.background = 'yellow';
+                newElement.style.padding = '5px';
+                newElement.style.color = 'black';
+                newElement.style.marginTop = '-4em';
+                newElement.style.opacity = '1';
+                header.appendChild(newElement);
             }
         })();
     </script>
