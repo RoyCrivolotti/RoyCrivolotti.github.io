@@ -20,7 +20,7 @@
 
             if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv:11\./)) {
                 // If Internet Explorer, return version number
-                document.write('<h2 style="position: fixed; z-index: 2 !important; margin-right: 20%; margin-left: 20%; transform: translate(0px, -30%);">IE is not supported...please switch to a modern browser. Sorry not sorry.</h2>');
+                document.write('<h2 style="position: fixed; z-index: 2 !important; margin-right: 20%; margin-left: 20%; transform: translate(0px, -30%); background: black; color: white; opacity: 0.7; width: 100%; height: auto; min-height: 60px; margin-top: 1.5vw;">IE is not supported...please switch to a modern browser. Sorry not sorry.</h2>');
                 document.getElementsByTagName('body')[0].style.margin = 0;
             }
         })();
