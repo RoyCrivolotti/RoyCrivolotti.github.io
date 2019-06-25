@@ -13,26 +13,6 @@
     <meta name="language" content="Spanish">
     <meta name="author" content="Roy Crivolotti">
 
-    <script>
-        (function explorerCheck() {
-            const ua = window.navigator.userAgent;
-            const msie = ua.indexOf('MSIE ');
-
-            if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv:11\./)) {
-                // If its Internet Explorer, add a banner
-                var header = document.getElementById('topbar');
-                var newElement = document.createElement('h2');
-                newElement.innerText = 'IE is not supported. Please switch to a modern browser!';
-                newElement.style.background = 'yellow';
-                newElement.style.padding = '5px';
-                newElement.style.color = 'black';
-                newElement.style.marginTop = '-4em';
-                newElement.style.opacity = '1';
-                header.appendChild(newElement);
-            }
-        })();
-    </script>
-
     <link rel='stylesheet' type='text/css' href='dist/main.css'>
     
     <!-- TODO: fix normalize -->
@@ -44,6 +24,30 @@
         <h1 id='title'>Roy Crivolotti - .NET developer at Globant</h1>
         <img src='images/white-menu.svg' alt='menu'>
     </header>
+    
+        <script>
+        (function explorerCheck() {
+            const ua = window.navigator.userAgent;
+            const msie = ua.indexOf('MSIE ');
+
+            if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv:11\./)) {
+                // If its Internet Explorer, add a banner
+                var header = document.getElementById('topbar');
+                var newElement = document.createElement('h2');
+                
+                console.log('Internet explorer is not supported!');
+                
+                newElement.innerText = 'IE is not supported. Please switch to a modern browser!';
+                newElement.style.background = 'yellow';
+                newElement.style.padding = '5px';
+                newElement.style.color = 'black';
+                newElement.style.marginTop = '-4em';
+                newElement.style.opacity = '1';
+                header.appendChild(newElement);
+            }
+        })();
+    </script>
+
 
     <nav class='navitem'>
         <ul class='navitem hide'>
