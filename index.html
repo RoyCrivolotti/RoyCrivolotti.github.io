@@ -21,7 +21,7 @@
 
 <body>
     <header id='topbar'>
-        <h1 id='title'>Roy Crivolotti - .NET developer at Globant</h1>
+        <h1 id='title'>Roy Crivolotti - Software Engineer at SOUTHWORKS</h1>
         <img src='images/white-menu.svg' alt='menu'>
     </header>
     
@@ -35,14 +35,25 @@
                 var header = document.getElementById('topbar');
                 var newElement = document.createElement('h2');
                 
-                console.log('Internet explorer is not supported!');
+                console.warn('Internet explorer is not supported!');
                 
-                newElement.innerText = 'IE is not supported. Please switch to a modern browser!';
-                newElement.style.background = 'yellow';
-                newElement.style.padding = '5px';
-                newElement.style.color = 'black';
-                newElement.style.marginTop = '-4em';
-                newElement.style.opacity = '1';
+                newElement.setAttribute('id', 'internetExplorerWarning');
+                newElement.innerText = '[      IE is not supported. Please switch to a modern browser!      ]';
+                newElement.style.fontSize = '13px';
+
+                if(window.outerWidth >= 1000) newElement.style.fontSize = '1.1em';
+
+                newElement.style.padding = '10px';
+                newElement.style.opacity = '0.8';
+                newElement.style.fontWeight = 'lighter';
+                newElement.style.marginTop = '60px';
+                newElement.style.color = '#800080';
+                newElement.style.whiteSpace = 'pre-wrap';
+                newElement.style.position = 'absolute';
+                newElement.style.left = '0';
+                newElement.style.right = '0';
+                newElement.style.marginRight = 'auto';
+                newElement.style.marginLeft = 'auto';
                 header.appendChild(newElement);
             }
         })();
