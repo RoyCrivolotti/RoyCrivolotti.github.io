@@ -11,7 +11,7 @@
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
     <meta charset='UTF-8'>
-    <meta name='language' content='Spanish'>
+    <meta name='language' content='English'>
     <meta name='author' content='Roy Crivolotti'>
 
     <link rel='stylesheet' type='text/css' href='dist/main.css'>
@@ -27,37 +27,37 @@
     </header>
 
     <script>
-        (function explorerCheck() {
-            const ua = window.navigator.userAgent;
-            const msie = ua.indexOf('MSIE ');
+        (function () {
+        	const ua = window.navigator.userAgent;
+        	const msie = ua.indexOf('MSIE ');
 
-            if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv:11\./)) {
-                // If its Internet Explorer, add a banner
-                var header = document.getElementById('topbar');
-                var newElement = document.createElement('h2');
+        	if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv:11\./)) {
+        		// If its Internet Explorer, add a banner
+        		const header = document.getElementById('topbar');
+        		const newElement = document.createElement('h2');
 
-                console.warn('Internet explorer is not supported!');
+        		console.warn('Internet explorer is not supported!');
 
-                newElement.setAttribute('id', 'internetExplorerWarning');
-                newElement.innerText = '[      IE is not supported. Please switch to a modern browser!      ]';
-                newElement.style.fontSize = '13px';
+        		newElement.setAttribute('id', 'internetExplorerWarning');
+        		newElement.innerText = '[      IE is not supported. Please switch to a modern browser!      ]';
+        		newElement.style.fontSize = '13px';
 
-                if (window.outerWidth >= 1000) newElement.style.fontSize = '1.1em';
+        		if (window.outerWidth >= 1000) newElement.style.fontSize = '1.1em';
 
-                newElement.style.padding = '10px';
-                newElement.style.opacity = '0.8';
-                newElement.style.fontWeight = 'lighter';
-                newElement.style.marginTop = '60px';
-                newElement.style.color = '#800080';
-                newElement.style.whiteSpace = 'pre-wrap';
-                newElement.style.position = 'absolute';
-                newElement.style.left = '0';
-                newElement.style.right = '0';
-                newElement.style.marginRight = 'auto';
-                newElement.style.marginLeft = 'auto';
-                header.appendChild(newElement);
-            }
-        })();
+        		newElement.style.padding = '10px';
+        		newElement.style.opacity = '0.8';
+        		newElement.style.fontWeight = 'lighter';
+        		newElement.style.marginTop = '60px';
+        		newElement.style.color = '#800080';
+        		newElement.style.whiteSpace = 'pre-wrap';
+        		newElement.style.position = 'absolute';
+        		newElement.style.left = '0';
+        		newElement.style.right = '0';
+        		newElement.style.marginRight = 'auto';
+        		newElement.style.marginLeft = 'auto';
+        		header.appendChild(newElement);
+        	}
+        }());
     </script>
 
 
@@ -217,7 +217,7 @@
                                 <path d='M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z' />
                             </svg>
                         </a>
-                        <a target='_blank' class='curriculum' title='PDF Curriculum' href='https://www.dropbox.com/s/bd6jyv7anxxd6bh/Curriculum%2C%20resumonk%2C%2005-june.pdf?dl=0'>
+                        <a target='_blank' class='curriculum' title='PDF Curriculum' href='https://www.dropbox.com/s/t2tv35c6uf8om2c/Curriculum%2C%20resumonk%2C%2012-19.pdf?dl=0'>
                             <svg xmlns='https://www.w3.org/2000/svg' enable-background='new 0 0 140 140' height='512' viewBox='0 0 140 140' width='512'>
                                 <circle xmlns='https://www.w3.org/2000/svg' cx='70' cy='70' fill='#4B0082' r='64' fill-opacity='0.5' />
                                 <path d='m37.8212814 96.5749817c.039978.0400391.0799561.0799561.1199951.1199951l37.0895996 37.0895996c27.5289307-2.1429443 50.1724243-21.6851807 56.9157181-47.6544189l-41.1553421-41.1552697c-4.4099731-4.5200195-10.2799683-10.5100098-14.3200073-14.5h-35.9499512c-2.0700073 0-3.7400513 1.6700439-3.7400513 3.7399902v59.7800255c0 .9699707.3800049 1.8500977.9900513 2.5100098l-.0100098.0100098z' opacity='.1' />
@@ -457,9 +457,11 @@
                 </div>
 
                 <script>
-                    const portfolio_logos = [...document.querySelectorAll('#portfolio #iconblock a')];
+                    const portfolioLogos = [...document.querySelectorAll('#portfolio #iconblock a')];
 
-                    portfolio_logos.forEach(el => el.addEventListener('contextmenu', e => e.preventDefault(), false));
+                    portfolioLogos.forEach(el => {
+                    	el.addEventListener('contextmenu', e => e.preventDefault(), false);
+                    });
                 </script>
             </div>
         </section>
