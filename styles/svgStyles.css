@@ -1,0 +1,214 @@
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 50px;
+}
+
+#wrapper div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+}
+
+#wrapper svg,
+#wrapper div,
+#mvmblocks svg {
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+#wrapper:not(:active),
+#wrapper:not(:hover),
+#mvmblocks:not(:hover),
+#mvmblocks:not(:active) {
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+#wrapper div:hover,
+#wrapper div:active,
+#mvmblocks svg:hover,
+#mvmblocks svg:active {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+#mvmblocks svg:active,
+#mvmblocks svg:hover {
+    opacity: 0.5;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+svg path {
+    stroke: white;
+    stroke-width: 0.8;
+    stroke-dasharray: 100px;
+    stroke-dashoffset: 100px;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+#mvmblocks {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px !important;
+    justify-content: center;
+    align-self: center;
+}
+
+#mvmblocks svg {
+    width: 50px;
+}
+
+#red {
+    fill: #EC493C;
+}
+
+#yellow {
+    fill: #F3C500;
+}
+
+#green {
+    fill: #01BE9D;
+}
+
+#purple {
+    fill: #9C54B8;
+}
+
+#netsvg .cls-1 {
+    fill: #fff;
+}
+
+#netsvg .cls-2,
+#netsvg .cls-3 {
+    fill: #000000;
+}
+
+#netsvg .cls-2 {
+    opacity: 0.1;
+}
+
+#csvg .cls-1 {
+    fill: #fff;
+}
+
+#csvg .cls-2,
+#csvg .cls-3 {
+    fill: #000000;
+}
+
+#csvg .cls-2 {
+    opacity: 0.1;
+}
+
+#netsvg path,
+#csvg path {
+    stroke-width: 1.5;
+    stroke-dasharray: 150px;
+    stroke-dashoffset: 150px;
+    animation-duration: 8s;
+}
+
+.animationName {
+    animation-name: draw;
+}
+
+#java path {
+    stroke-width: 0.6;
+}
+
+#node path,
+#mysql path {
+    /* stroke: #000; */
+    fill: black;
+    stroke-width: 1.8;
+    stroke-dasharray: 300px;
+    stroke-dashoffset: 300px;
+    animation-timing-function: unset;
+    animation-duration: 12s;
+}
+
+#mysql path {
+    stroke-width: 1.5;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+        opacity: 0.5;
+    }
+
+    /* 0% {
+        stroke-dashoffset: 100;
+        opacity: 1;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+        opacity: 0.5;
+    }
+
+    100% {
+        stroke-dashoffset: 100;
+        opacity: 1;
+    } */
+}
+
+@media only screen and (max-width: 1024px) {
+    #wrapper {
+        width: 80vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    svg {
+        width: 40%;
+    }
+
+    #wrapper div:nth-of-type(5) {
+        grid-column: 1/2;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #mvmblocks {
+        padding-top: 0em;
+    }
+
+    #mvmblocks svg {
+        width: 30px;
+    }
+
+    #mvmblocks {
+        grid-template-columns: 30px 30px;
+        grid-template-rows: 30px 30px !important;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #wrapper {
+        width: 100vw;
+    }
+
+    #wrapper div {
+        margin-bottom: 2em;
+    }
+
+    #mvmblocks {
+        height: auto !important;
+    }
+}
